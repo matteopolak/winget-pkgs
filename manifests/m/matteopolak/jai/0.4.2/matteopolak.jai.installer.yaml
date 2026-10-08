@@ -1,0 +1,40 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: matteopolak.jai
+PackageVersion: 0.4.2
+InstallerType: zip
+NestedInstallerType: portable
+Commands:
+- jaic
+- jaifmt
+- jailint
+- jailsp
+ReleaseDate: 2026-10-08
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: jai-windows-x64\jaic.exe
+    PortableCommandAlias: jaic
+  - RelativeFilePath: jai-windows-x64\jaifmt.exe
+    PortableCommandAlias: jaifmt
+  - RelativeFilePath: jai-windows-x64\jailint.exe
+    PortableCommandAlias: jailint
+  - RelativeFilePath: jai-windows-x64\jailsp.exe
+    PortableCommandAlias: jailsp
+  InstallerUrl: https://github.com/matteopolak/jai/releases/download/v0.4.2/jai-windows-x64.zip
+  InstallerSha256: D81AFA78AAA6BF79746FEF0D1FA6ED64AB36A91D7571D55F7BC6839C60441D65
+- Architecture: arm64
+  NestedInstallerFiles:
+  - RelativeFilePath: jai-windows-arm64\jaic.exe
+    PortableCommandAlias: jaic
+  - RelativeFilePath: jai-windows-arm64\jaifmt.exe
+    PortableCommandAlias: jaifmt
+  - RelativeFilePath: jai-windows-arm64\jailint.exe
+    PortableCommandAlias: jailint
+  - RelativeFilePath: jai-windows-arm64\jailsp.exe
+    PortableCommandAlias: jailsp
+  InstallerUrl: https://github.com/matteopolak/jai/releases/download/v0.4.2/jai-windows-arm64.zip
+  InstallerSha256: 4513B83F3737A3F6410B97F03FC452DE30A5D4B5B2D3401C4DD0532F39AD1E1A
+ManifestType: installer
+ManifestVersion: 1.12.0
